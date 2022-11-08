@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>背景图位置</title>
+    <style>
+        span{
+            font-size: 50px;
+            background-color: red;
+            color: white;
+        }
+      .box {
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 20px dotted black;
+        background-image: url(./img/定位.jpg);
+        background-repeat: no-repeat;
+      }
+      /* 第一组 左上角 */
+      .box1 {
+        /* background-position: 水平偏移，垂直偏移; */
+        background-position: 0 0; /*像素单位*/
+      }
+      .box2 {
+        background-position: 0% 0%; /*百分比单位*/
+      }
+      .box3 {
+        background-position: left top; /*关键词单位*/
+      }
+      /* 第二组 右上角 */
+      .box4 {
+        background-position: 190px 0;
+      }
+      .box5 {
+        background-position: 100% 0;
+      }
+      .box6 {
+        background-position: top right;
+      }
+      /* 第三组 右下角 */
+      .box7 {
+        background-position: 190px 190px;
+      }
+      .box8 {
+        background-position: 100% 100%;
+      }
+      .box9 {
+        background-position: bottom right;
+      }
+      /* 左下角 */
+      .box10 {
+        background-position: 0px 190px;
+      }
+      .box11 {
+        background-position: 0% 100%;
+      }
+      .box12 {
+        background-position: bottom left;
+      }
+      /* 中央 */
+      .box13 {
+        background-position: 95px 95px;
+      }
+      .box14 {
+        background-position: 50% 50%;
+      }
+      .box15 {
+        background-position: center center;
+      }
+    </style>
+  </head>
+  <body>
+    <span>background-position: 0 0;</span>
+    <div class="box box1"></div>
+    <span>background-position: 0% 0%;</span>
+    <div class="box box2"></div>
+    <span>background-position: left top;</span>
+    <div class="box box3"></div>
+    <span>background-position: 190px 0;</span>
+    <div class="box box4"></div>
+    <span>background-position: 100% 0;</span>
+    <div class="box box5"></div>
+    <span>background-position: top right;</span>
+    <div class="box box6"></div>
+    <span>background-position: 190px 190px;</span>
+    <div class="box box7"></div>
+    <span>background-position: 100% 100%;</span>
+    <div class="box box8"></div>
+    <span>background-position: bottom right;</span>
+    <div class="box box9"></div>
+    <span>background-position: 0px 190px;</span>
+    <div class="box box10"></div>
+    <span>background-position: 0% 100%;</span>
+    <div class="box box11"></div>
+    <span>background-position: bottom left;</span>
+    <div class="box box12"></div>
+    <span>background-position: 95px 95px;</span>
+    <div class="box box13"></div>
+    <span>background-position: 50% 50%;</span>
+    <div class="box box14"></div>
+    <span>background-position: center center;</span>
+    <div class="box box15"></div>
+  </body>
+</html>

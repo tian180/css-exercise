@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+            width: 30vw;
+            height: 100vh;
+            margin: 0 auto;
+            background-color: green;
+            font-size: 1.25rem;
+        }
+        .box{
+            height: 20vh;
+            font-size: 2em;
+        }
+        .box:nth-child(odd){
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">20%</div>
+        <div class="box">40%</div>
+        <div class="box">60%</div>
+        <div class="box">80%</div>
+        <div class="box">100%</div>
+    </div>
+</body>
+</html>
+
+<!-- 
+vh：表示视口(viewport)高度的百分之一。 v：表示viewport  h:表示height
+vw：表示视口宽度的百分之一。 v：表示viewport  w:表示width
+
+一、视口是什么
+视口是网页的可见区域。
+vh：viewport height
+ -->

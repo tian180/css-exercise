@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>背景渐变</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 20px dotted black;
+        /* background-repeat: no-repeat; */
+      }
+      .lienar1 {
+        background-image: linear-gradient(180deg, red, yellow, blue);
+      }
+      .lienar2 {
+        background-image: linear-gradient(45deg, red, yellow, blue);
+      }
+      .lienar3 {
+        background-image: linear-gradient(
+          180deg,
+          red,
+          yellow,
+          blue,
+          pink,
+          green
+        );
+      }
+      .lienar4 {
+        background-image: linear-gradient(180deg, red 50%, yellow, blue);
+      }
+      .lienar5 {
+        background-image: linear-gradient(
+            /* 45deg, */ red 25%,
+            transparent 25%,
+            transparent 75%,
+            red 75%,
+            red
+          ),
+          linear-gradient(-45deg, red 25%, yellow 25%, yellow 75%, red 75%, red);
+        background-size: 50px 50px;
+        /* linear-gradient(green, pink); */
+      }
+      .radial1 {
+        background-image: radial-gradient(ellipse, red, yellow);
+      }
+      .radial2 {
+        width: 400px;
+        background-image: radial-gradient(circle at bottom right, red, yellow);
+      }
+      .radial3 {
+        width: 400px;
+        background-image: radial-gradient(closest-side, red, yellow);
+      }
+      .conic1 {
+        background-image: conic-gradient(red, blue);
+      }
+      .conic2 {
+        background-image: conic-gradient(
+            at 50px,
+            red,
+             blue
+             );
+      }
+      .conic3 {
+        background-image: conic-gradient(
+            from 45deg,
+            red,
+             blue
+             );
+      }
+      .conic4    {
+        background-image: conic-gradient(
+            at 50% 50%,
+            red,
+             blue
+             );
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 线性 -->
+    <div class="box lienar1"></div>
+    <div class="box lienar2"></div>
+    <div class="box lienar3"></div>
+    <div class="box lienar4"></div>
+    <div class="box lienar5"></div>
+    <!-- 径向 -->
+    <div class="box radial1"></div>
+    <div class="box radial2"></div>
+    <div class="box radial3"></div>
+    <!-- 角度 -->
+    <div class="box conic1"></div>
+    <div class="box conic2"></div>
+    <div class="box conic3"></div>
+    <div class="box conic4"></div>
+    <div class="box conic5"></div>
+  </body>
+</html>
+<!-- 
+    
+    线性渐变 
+    径向渐变
+    角度渐变
+    渐变是什么？
+    指两种颜色之间的平滑过度
+    线性渐变是什么？
+    指两种颜色之间按照直线方法平滑过度。
+    径向渐变是什么？
+    指两种颜色之间按照射线方式平滑过度。
+    角度渐变是么？
+    指两种颜色之间按照360°旋转方式平滑过度。
+    设置渐变的属性时哪个？
+    background-image
+    线性渐变语法：
+    background-image: linear-gradient(渐变角度，颜色停止列表);
+    径向渐变语法：
+    radial-gradient(渐变形状(circle,ellipse) 渐变位置，颜色列表)
+    radial-gradient(渐变形状，颜色列表)
+    角度渐变语法：
+    conic-gradient（from 角度，颜色列表）
+    conic-gradient(at 位置，颜色列表)
+-->

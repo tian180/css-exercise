@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景色</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 20px dotted black;
+        }
+        .box1{
+            background-color: yellow;
+        }
+        .box2{
+            background-color: #ff00ff;
+        }
+        .box3{
+            background-color: rgba(255,0,255,1);
+        }
+        .box4{
+            background-color: hsla(300,100%,50%,1);
+        }
+        .box5{
+            background-color: purple;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    background-color: yellow;  /*颜色值：英文单词*/
+    <div class="box box1"></div>
+    background-color: #ff00ff;  /*颜色值：十六进制*/
+    <div class="box box2"></div>
+    background-color: rgba(255,0,255,1);  /*颜色值：rgba()*/
+    <div class="box box3"></div>
+    background-color: hsla(300,100%,50%,1);   /*颜色值：色相饱和度*/
+    <div class="box box4"></div>
+    background-color: transparent; /*透明色 默认值*/
+    <div class="box box5"></div>
+</body>
+</html>
+
+<!-- background-color：
+
+1.属性定义： 用于定义元素的背景色
+2.背景色覆盖到哪个区域停止？
+    边框，但不会超出边框
+3.background-color可以定义渐变色吗？
+    不可以
+4.背景颜色值的写法有几种？
+    十六进制 #ff0000
+    英文单词 red
+    rgb()
+    rgba(红，绿，蓝，alpha)
+    rgba(0-255,0-255,0-255,0-1)
+    hsl()
+    hsla(色相，饱和度，明度，不透明度)
+    hsla(0-360,0-100%，0-100%，0-1)
+
+-->
